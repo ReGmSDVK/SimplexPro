@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA7CF18A-8269-4177-9973-52012B608074}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SimplexPro</RootNamespace>
+    <AssemblyName>SimplexPro</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PicsArt_05-25-03.25.39.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.12.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.12.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="FormAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddUser.Designer.cs">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormApartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormApartment.Designer.cs">
+      <DependentUpon>FormApartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormApartment2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormApartment2.Designer.cs">
+      <DependentUpon>FormApartment2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBlanc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBlanc.Designer.cs">
+      <DependentUpon>FormBlanc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCalculator.Designer.cs">
+      <DependentUpon>FormCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHome2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome2.Designer.cs">
+      <DependentUpon>FormHome2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOwner.Designer.cs">
+      <DependentUpon>FormOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOwner2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOwner2.Designer.cs">
+      <DependentUpon>FormOwner2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSector.Designer.cs">
+      <DependentUpon>FormSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSector2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSector2.Designer.cs">
+      <DependentUpon>FormSector2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeySiplexDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KeySiplexDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KeySiplexProDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KeySiplexProDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="НедвижимостьDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>НедвижимостьDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddUser.resx">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormApartment.resx">
+      <DependentUpon>FormApartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormApartment2.resx">
+      <DependentUpon>FormApartment2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBlanc.resx">
+      <DependentUpon>FormBlanc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCalculator.resx">
+      <DependentUpon>FormCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome2.resx">
+      <DependentUpon>FormHome2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOwner.resx">
+      <DependentUpon>FormOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOwner2.resx">
+      <DependentUpon>FormOwner2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSector.resx">
+      <DependentUpon>FormSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSector2.resx">
+      <DependentUpon>FormSector2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="KeySiplexDataSet.xsc">
+      <DependentUpon>KeySiplexDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KeySiplexDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KeySiplexDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KeySiplexDataSet.xss">
+      <DependentUpon>KeySiplexDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KeySiplexProDataSet.xsc">
+      <DependentUpon>KeySiplexProDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KeySiplexProDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KeySiplexProDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KeySiplexProDataSet.xss">
+      <DependentUpon>KeySiplexProDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="НедвижимостьDataSet.xsc">
+      <DependentUpon>НедвижимостьDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="НедвижимостьDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>НедвижимостьDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="НедвижимостьDataSet.xss">
+      <DependentUpon>НедвижимостьDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeyIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\owner1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\owner2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Siplex-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="KeySiplex.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="KeySiplexPro.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PicsArt_05-25-03.25.39.ico" />
+    <Content Include="Resources\house-on-square-background-with-check-mark_icon-icons.com_70468.ico" />
+    <Content Include="Недвижимость.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
